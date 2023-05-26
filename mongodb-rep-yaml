@@ -1,0 +1,12 @@
+apiVersion: mongodb.com/v1
+kind: MongoDB
+metadata:
+  name: my-mongodb
+  namespace: my-mongodb
+spec:
+  members: 3
+  type: ReplicaSet
+  version: "4.4.5"
+  security:
+    authentication:
+      modes: ["SCRAM"]
